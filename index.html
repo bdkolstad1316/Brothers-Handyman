@@ -36,8 +36,9 @@
         }
 
         img { max-width: 100%; display: block; }
-        a { color: var(--gold); text-decoration: none; transition: color 0.3s; }
+        a { color: var(--gold); text-decoration: none; transition: color 0.3s; -webkit-tap-highlight-color: rgba(232, 177, 0, 0.2); }
         a:hover { color: var(--gold-light); }
+        .btn:active { transform: scale(0.97); }
 
         .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
@@ -339,21 +340,92 @@
 
         /* ========== MOBILE ========== */
         @media (max-width: 768px) {
+            /* Nav */
             .nav-links { display: none; }
             .nav-links.open {
                 display: flex; flex-direction: column;
                 position: absolute; top: 64px; left: 0; right: 0;
                 background: rgba(26, 26, 26, 0.98);
-                padding: 20px 24px;
-                gap: 16px;
+                padding: 24px 24px;
+                gap: 20px;
                 border-bottom: 2px solid var(--gold);
             }
-            .nav-toggle { display: block; }
-            .about-grid { grid-template-columns: 1fr; }
-            .about-visual { order: -1; }
-            .tool-graphic { max-width: 280px; aspect-ratio: auto; height: 250px; }
+            .nav-links.open a {
+                font-size: 1.1rem;
+                padding: 8px 0;
+            }
+            .nav-toggle { display: block; min-width: 44px; min-height: 44px; padding: 8px; }
+
+            /* Scroll offset so sections don't hide behind sticky nav */
+            #services, #about, #why, #contact {
+                scroll-margin-top: 72px;
+            }
+
+            /* Sections */
             section { padding: 60px 0; }
-            .services-grid { grid-template-columns: 1fr; }
+            .container { padding: 0 20px; }
+
+            /* Hero */
+            .hero { padding: 100px 20px 60px; min-height: 100svh; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-sub { font-size: 1rem; margin: 12px auto 28px; }
+            .hero-phone { font-size: 1.4rem; }
+            .hero-phone svg { width: 24px; height: 24px; }
+            .hero-cta {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                margin-top: 24px;
+                padding: 0 8px;
+            }
+            .hero-cta .btn {
+                width: 100%;
+                text-align: center;
+                padding: 16px 24px;
+                font-size: 1rem;
+            }
+
+            /* Services */
+            .services-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 28px; }
+            .service-card { padding: 24px 20px; }
+            .service-card:hover { transform: none; }
+
+            /* About */
+            .about-grid { grid-template-columns: 1fr; gap: 32px; }
+            .about-visual { order: -1; }
+            .tool-graphic { max-width: 220px; aspect-ratio: auto; height: 200px; }
+            .about-stats { gap: 12px; }
+            .stat-box { padding: 16px; }
+            .stat-box .number { font-size: 1.6rem; }
+
+            /* Why Us */
+            .why-grid { grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }
+
+            /* Contact */
+            #contact { padding: 70px 0; }
+            #contact .btn {
+                width: calc(100% - 40px);
+                max-width: 320px;
+                text-align: center;
+                padding: 16px 24px;
+                font-size: 1rem;
+            }
+
+            /* Footer */
+            footer { padding: 24px 0; }
+        }
+
+        /* Small phones (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .hero h1 { font-size: 1.9rem; }
+            .hero-badge { font-size: 0.7rem; padding: 5px 14px; letter-spacing: 2px; }
+            .contact-phone { font-size: 1.8rem; }
+            .stat-box .number { font-size: 1.4rem; }
+        }
+
+        /* Use 100svh for modern mobile browsers that account for address bar */
+        @supports (height: 100svh) {
+            .hero { min-height: 100svh; }
         }
 
         /* ========== ANIMATIONS ========== */
