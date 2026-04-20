@@ -1,0 +1,15 @@
+# Optional — add this Caddyfile to the repo root if you want the Link:
+# response header (tells crawlers where sitemap.xml / llms.txt / robots.txt
+# live without them having to guess at common paths).
+#
+# Railway auto-detects Caddy when a Caddyfile is present and will use this
+# to serve the static site instead of its default static server.
+#
+# Delete this file if you don't care about the Link header — the other
+# three files still work without it.
+
+:{$PORT} {
+    root * .
+    file_server
+    header Link "</sitemap.xml>; rel=\"sitemap\", </llms.txt>; rel=\"llms-txt\", </robots.txt>; rel=\"robots\""
+}

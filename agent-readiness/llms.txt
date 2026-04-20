@@ -1,0 +1,28 @@
+# Brother Handyman Services L.L.C
+
+> Family-run handyman business serving Idaho and Washington. Owner-operator Kenny handles home repairs, painting, drywall, plumbing, fencing, and carpentry.
+
+Brother Handyman Services is a licensed L.L.C. operating across Idaho and Washington. The business is owner-operated by Kenny — customers talk to the same person who shows up to do the work. Pricing is quote-based with no hidden fees. The business covers residential handyman services including small repairs, painting, drywall and texturing, basic plumbing, fencing, and carpentry and assembly work.
+
+## Services
+
+- [Home Repairs](https://brothers-handyman-production.up.railway.app/#services): Drywall patches, door adjustments, weather stripping, caulking, and small household fixes.
+- [Painting](https://brothers-handyman-production.up.railway.app/#services): Interior and exterior painting, staining, touch-ups, and surface prep.
+- [Drywall & Texturing](https://brothers-handyman-production.up.railway.app/#services): Hanging, taping, mudding, and texture matching.
+- [Plumbing](https://brothers-handyman-production.up.railway.app/#services): Leaky faucets, running toilets, garbage disposals, fixture swaps, and basic pipe work.
+- [Fencing](https://brothers-handyman-production.up.railway.app/#services): Wood, vinyl, and chain link installation and repairs; gate replacements.
+- [Carpentry & Assembly](https://brothers-handyman-production.up.railway.app/#services): Shelving, trim work, deck repairs, furniture assembly, custom builds.
+
+## Service Area
+
+- Idaho — statewide
+- Washington — statewide
+
+## Contact
+
+- [Call Kenny: (208) 790-1971](tel:+12087901971)
+
+## Optional
+
+- [About](https://brothers-handyman-production.up.railway.app/#about): Business background and values.
+- [Why Brother Handyman](https://brothers-handyman-production.up.railway.app/#why): Honest quotes, on-time arrivals, family-owned, clean job sites.

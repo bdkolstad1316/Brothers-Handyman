@@ -7,6 +7,22 @@
     <meta name="description" content="Brother Handyman Services L.L.C — reliable handyman services across Idaho &amp; Washington. Call Kenny at (208) 790-1971 for repairs, painting, plumbing, carpentry, and more.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <noscript>
+        <style>
+            @media (max-width: 768px) {
+                .nav-links {
+                    display: flex !important;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 64px; left: 0; right: 0;
+                    background: rgba(26, 26, 26, 0.98);
+                    padding: 24px;
+                    gap: 20px;
+                    border-bottom: 2px solid var(--gold);
+                }
+            }
+        </style>
+    </noscript>
     <style>
         /* ========== RESET & BASE ========== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -360,7 +376,10 @@
             }
             .nav-links.open a {
                 font-size: 1.1rem;
-                padding: 8px 0;
+                padding: 14px 0;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
             }
             .nav-toggle { display: block; min-width: 44px; min-height: 44px; padding: 8px; }
 
@@ -408,6 +427,9 @@
 
             /* Why Us */
             .why-grid { grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }
+
+            /* Body copy bump for phone readability */
+            .service-card p, .why-item p { font-size: 1rem; }
 
             /* Contact */
             #contact { padding: 70px 0; }
@@ -615,7 +637,7 @@
     <div class="container">
         <p><span class="footer-brand">Brother Handyman Services L.L.C</span></p>
         <p style="margin-top:6px;">Idaho &amp; Washington &bull; (208) 790-1971</p>
-        <p style="margin-top:12px; font-size:0.75rem; color:#666;">&copy; 2026 Brother Handyman Services L.L.C. All rights reserved.</p>
+        <p style="margin-top:12px; font-size:0.8rem; color:#888;">&copy; 2026 Brother Handyman Services L.L.C. All rights reserved.</p>
     </div>
 </footer>
 
